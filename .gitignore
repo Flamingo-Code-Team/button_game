@@ -1,0 +1,10 @@
+Library/
+debug.log
+etc/
+UnityPackageManager/
+Button.csproj
+Button.sln
+builds/
+Logs/
+Packages/
+.collabignore
