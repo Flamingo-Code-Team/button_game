@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 public class Controll : MonoBehaviour {
-
+    //SSS
     public Slider speed_scroll; // Объект ползунка скорости
     /*Кнопочки цветов*/ 
     public Color first_color;
