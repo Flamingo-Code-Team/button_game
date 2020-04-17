@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "button_game", "button_game.csproj", "{9294D36C-83F4-8007-8096-B9B376CD7085}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{6F1783B9-D2CB-19A7-E5C5-132F847E6797}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9294D36C-83F4-8007-8096-B9B376CD7085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9294D36C-83F4-8007-8096-B9B376CD7085}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9294D36C-83F4-8007-8096-B9B376CD7085}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9294D36C-83F4-8007-8096-B9B376CD7085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1783B9-D2CB-19A7-E5C5-132F847E6797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1783B9-D2CB-19A7-E5C5-132F847E6797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1783B9-D2CB-19A7-E5C5-132F847E6797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1783B9-D2CB-19A7-E5C5-132F847E6797}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

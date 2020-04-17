@@ -17,23 +17,20 @@ public class Controll : MonoBehaviour {
     public GameObject[] Array_buttons = new GameObject[2]; //Массив объектов которые двигаются (кнопок)
 
     public GameObject triggers_; // массив для попытки использовать триггеры
+    //public Active_coubes[] triggers_array; //забудешь же, это массив квадратиков, они пропадают, сейчас идея в том что бы потом считать счетчиком их состояния
 
-    //public Active_coubes[] triggers_array; //сука забудешь же, это массив квадратиков, они пропадают, сейчас идея в том что бы потом считать счетчиком их состояния
-    
     bool check_but = false; // переменная для определения нажатия на кнопочку цвета
     
     public static bool[] num_but = new bool[3]; //массив логических переменных для определения состояния каждого двигающегося объекта  (кнопки)
-
 
     public int Level__future_PlayerPrefs; // переменная для перехода на другой уровень (сцену) в будующем изменить ее инициализацию на работу с PlayerPrefs
 
     void Start()
     { 
-        num_but[0] = true;
-       
+        num_but[0] = true;       
     }
 
-    void FixedUpdate ()
+    void FixedUpdate()
     {
         if (num_but[0] == true)
         {
