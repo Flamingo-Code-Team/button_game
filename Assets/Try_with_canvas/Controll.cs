@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 public class Controll : MonoBehaviour {
-    //SSS
+
     public Slider speed_scroll; // Объект ползунка скорости
     /*Кнопочки цветов*/ 
     public Color first_color;
@@ -24,14 +24,24 @@ public class Controll : MonoBehaviour {
     public static bool[] num_but = new bool[3]; //массив логических переменных для определения состояния каждого двигающегося объекта  (кнопки)
 
     public int Level__future_PlayerPrefs; // переменная для перехода на другой уровень (сцену) в будующем изменить ее инициализацию на работу с PlayerPrefs
-
+   
+    public GameObject test_obj;
+    public Vector3 buf_v3;
+    public float speed = 1;
     void Start()
-    { 
-        num_but[0] = true;       
+    {
+        num_but[0] = true;
+        buf_v3 = test_obj.GetComponent<Transform>().position;
     }
+
 
     void FixedUpdate()
     {
+        if (test_obj.GetComponent<Transform>().transform.position.y < buf_v3.y + 150)
+            test_obj.GetComponent<Transform>().localPosition += Vector3.up * speed;
+        else
+            test_obj.GetComponent<Transform>().transform.position = buf_v3;
+
         if (num_but[0] == true)
         {
             Array_buttons[0].transform.Rotate(0, 0, 1 * speed_scroll.value * 10f); // Создание вращения
@@ -113,8 +123,6 @@ public class Controll : MonoBehaviour {
             Array_buttons[2].GetComponent<Button>().colors = cb;
             check_but = false;
         }
-
-
     }
 
    
