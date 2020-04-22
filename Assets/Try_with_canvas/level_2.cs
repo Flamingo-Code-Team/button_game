@@ -33,5 +33,6 @@ public class level_2 : MonoBehaviour
             }
             else num++;
         }
+        if(Triangle.GetComponent<Transform>().transform.position.y == -220) Debug.Log("You are WINER triangle");
     }
 }
